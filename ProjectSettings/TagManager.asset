@@ -8,6 +8,8 @@ TagManager:
   - Ground
   - SpawnManager
   - Obstacle
+  - Money
+  - Coin
   layers:
   - Default
   - TransparentFX

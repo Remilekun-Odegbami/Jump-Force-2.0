@@ -7,27 +7,30 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public static bool isGameOver;
+    public static GameManager Instance { get; set; }   
+
     public GameObject gameOverPanel;
     public GameObject startMenuPanel;
     public GameObject gamePlayPanel;
     public GameObject gamePausedPanel;
+    public GameObject timeUpPanel;
+
+    public static bool isGameOver;
+    public static bool isGameStarted;
     public static bool mute = false;
     public static bool pause = false;
     public static bool isTimeUp;
     public static float score = 0;
 
-    public bool isDead { get; set; }
 
-
-    public static bool isGameStarted;
+    private const int COIN_SCORE = 5;
+    
     
     private PlayerController playerController;
 
     //UI and UI fields
     public TextMeshProUGUI scoreText, timeValue, coinText;
-    
-
+    private float coinScore;
 
     // Start is called before the first frame update
     void Start()
@@ -69,35 +72,21 @@ public class GameManager : MonoBehaviour
         {
             // stop the game by stopping the time
             Time.timeScale = 0;
-            //timeUpPanel.SetActive(true);
+            timeUpPanel.SetActive(true);
 
             //reload the level 
             if (Input.GetButtonDown("Fire1"))
             {
-                //// check if there is a new highscore 
-                if (score > PlayerPrefs.GetInt("HighScore", 0))
-                {
-                    // set player score to high score
-                    //PlayerPrefs.SetInt("HighScore", score);
-                }
-                // reset the score on game over
-                score = 0;
-                SceneManager.LoadScene("Level");
+                SceneManager.LoadScene("Game");
             }
         }
 
         if(isGameStarted && !isGameOver)
         {
             score += (Time.deltaTime);
-            scoreText.text = "Score:" + score.ToString();
+            scoreText.text = "Score: " + score.ToString();
             Debug.Log(scoreText.text);
         }
     }
 
-    public void UpdateScores()
-    {
-        //scoreText.text = score.ToString();
-        //coinText.text = coinScore.ToString();
-        //timeValue.text = GameTimer.timeText.ToString();
-    }
 }

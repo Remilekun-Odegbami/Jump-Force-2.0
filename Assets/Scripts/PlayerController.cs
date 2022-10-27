@@ -14,7 +14,6 @@ public class PlayerController : MonoBehaviour
     public bool isOnGround = true;
 
     private AudioManager playerAudioManager;
-    //public bool isGameOver;
 
 
     // Start is called before the first frame update
@@ -43,7 +42,6 @@ public class PlayerController : MonoBehaviour
             playerAnim.SetTrigger("Jump_trig");
             Debug.Log("Jumping");
             dirtParticle.Stop();
-            //playerAudio.PlayOneShot(jumpSound, 0.7f);
             playerAudioManager.Play("Jump");
         }
 
@@ -58,6 +56,8 @@ public class PlayerController : MonoBehaviour
             dirtParticle.Stop();
             playerAudioManager.Play("Jump");
         }
+
+        
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -71,8 +71,6 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("Game Over");
             GameManager.isGameOver = true;
-           // playerAnim.SetBool("Death_b", true);
-           // playerAnim.SetInteger("DeathType_int", 1);
             explosionParticle.Play();
             dirtParticle.Stop();
             playerAudioManager.Play("Crash");
@@ -85,6 +83,3 @@ public class PlayerController : MonoBehaviour
     }
 
 }
-
-
-// video 5, 9:30 mins.
