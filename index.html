@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/0383fc1297.js"></script>
+    <!-- For the overall page animation, I used a library called aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- I used swiper slider for the carousel card animation  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Remilekun</title>
+  </head>
+  <body>
+    <header>
+      <a href="#main" class="brand"> Remilekun</a>
+      <div class="menu-btn"></div>
+      <div class="menu-btn2"></div>
+      <div class="navigation">
+        <a href="#about"> About</a>
+        <a href="#services"> Services</a>
+        <a href="#work"> Work</a>
+        <a href="#contact"> Contact</a>
+      </div>
+    </header>
+
+    <div class="main" id="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <div class="intro">
+              <h5 class="greet" data-aos="zoom-in" data-aos-duration="900">
+                Welcome!!!
+              </h5>
+            </div>
+            <h2 class="name" data-aos="fade-up" data-aos-duration="1000">
+              I am Remilekun, I am a
+            </h2>
+            <div id="text"></div>
+            <div id="cursor"></div>
+
+            <h6 data-aos="fade-up" data-aos-duration="1500" class="more-info">
+              I'm
+              specialized in frontend and backend development using JavaScript
+              frameworks such as React Js and Node Js to create beautiful websites.
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="about" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="title">
+            <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">About Me</h2>
+          </div>
+          <div class="col-md-5 col-sm-12" data-aos="zoom-in" data-aos-duration="1300">
+            <img
+              src="Media/Odegbami Remilekun.jpeg"
+              alt="Remilekun"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-7 col-sm-12 about-content">
+            <p data-aos="fade-up" data-aos-duration="400">
+              I am Odegbami Remilekun. A web developer who loves to build
+              websites.
+            </p>
+            <p data-aos="fade-up" data-aos-duration="600">
+              I love React JS and think its fun. Well this means I am a React JS
+              Developer, I am also a Node Js developer.
+            </p>
+            <p data-aos="fade-up" data-aos-duration="800">I am currently learning game development using Unity and C#.</p>
+            <p data-aos="fade-up" data-aos-duration="1000">
+              I believe learning is a continuous process that is why I am always
+              trying to learn something new everyday so as to improve and become
+              the best version of myself.
+            </p>
+            <span data-aos="zoom-in" data-aos-duration="1200">Fun Facts:</span> 
+            <ul>
+              <li data-aos="fade-up" data-aos-duration="1200">I am a graduate of Mississippi Coding Academies</li>
+              <li data-aos="fade-up" data-aos-duration="1400">I am a Linguist turned Full Stack developer.</li>
+              <li data-aos="fade-up" data-aos-duration="1600">I am a currently working on being a game developer.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="icon-bar">
+      <a
+        href="https://twitter.com/Rem_dev22?t=iGkHQywSS5v2ROOH6k3-pg&s=08"
+        class="twitter"
+        ><i class="fa fa-twitter"></i
+      ></a>
+      <a href="https://www.linkedin.com/in/remilekun-odegbami" class="linkedin"
+        ><i class="fa fa-linkedin"></i
+      ></a>
+      <a href="https://github.com/Remilekun-Odegbami" class="youtube"
+        ><i class="fa fa-github"></i
+      ></a>
+      <a href="mailto:remdev22@gmail.com" class="mail"
+        ><i class="fa fa-envelope"></i
+      ></a>
+    </div>
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="row">
+          <div class="title">
+            <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">My Services</h2>
+          </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <div class="service-icon">
+                      <i class="fa fa-code" aria-hidden="true"></i>
+                    </div>
+                    <h5 class="card-title">Front End Development</h5>
+                    <p class="card-text">
+                      As a Front End Developer, I write front end languages like
+                    HTML, CSS, Bootstrap, JavaScript and React Js for web
+                    development.
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+              <div class="col" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <div class="service-icon">
+                      <i class="fa fa-server" aria-hidden="true"></i>
+                    </div>
+                    <h5 class="card-title">Back End Development</h5>
+                    <p class="card-text">
+                      As a Back End Developer, I write Node Js and C# to build
+                    server-side software. I use MySQL and MongoDb for database
+                    development and management.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <div class="service-icon">
+                      <i class="fa fa-gamepad" aria-hidden="true"></i>
+                    </div>
+                    <h5 class="card-title">Game Development</h5>
+                    <p class="card-text">
+                      I am currently learning to create games using Unity and C#.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <section class="work" id="work">
+      <div class="container">
+        <div class="row">
+          <div class="title">
+            <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">
+               My Work
+            </h2>
+          </div>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper my-3">
+              <div class="testimonial swiper-slide col-lg-4 col-sm-12">
+                <a href="https://ibadan-ias.org/" target="_blank">
+                  <figure>
+                    <img src="Media/ias.png" alt="American Presidents" />
+                    <figcaption>Live Project</figcaption>
+                  </figure>
+                </a>
+                <p class="desc">
+                  This is the website of a department in a university that was
+                  built using frontend and backend frameworks.
+                </p>
+              </div>
+              <div class="testimonial swiper-slide col-lg-4 col-sm-12">
+                <a
+                  href="https://remilekun-president.herokuapp.com/"
+                  target="_blank"
+                >
+                  <figure>
+                    <img src="Media/presidents.png" alt="American Presidents" />
+                    <figcaption>American Presidents</figcaption>
+                  </figure>
+                </a>
+                <p class="desc">
+                  This is an application built using Node Js, Express and Sample APIs. It enables users to see a list of past American Presidents stored in Sample API. 
+                </p>
+              </div>
+              <div class="testimonial swiper-slide col-lg-4 col-sm-12">
+                <a
+                  href="https://team-royal-help-tips-site.vercel.app/"
+                  target="_blank"
+                >
+                  <figure>
+                    <img src="Media/Team-Royal.PNG" alt="Notes App" />
+                    <figcaption>Notes App</figcaption>
+                  </figure>
+                </a>
+                <p class="desc">
+                  This is one of my collaborative projects built using React Js and was integrated with Heroku API for fetching notes data. It has a login, register and a dynamic navigation bar that displays different options for logged in users and first time users.
+                </p>
+              </div>
+              <div class="testimonial swiper-slide col-lg-4 col-sm-12">
+                <a
+                  href="https://busha-remilekun-odegbami.vercel.app/"
+                  target="_blank"
+                >
+                  <figure>
+                    <img src="Media/busha.png" alt="Busha" />
+                    <figcaption>Busha</figcaption>
+                  </figure>
+                </a>
+                <p class="desc">
+                  This is a clone of the Busha website. It was built using HTML, CSS and JavaScript.The application can serve as a template website for a fintech company.
+                </p>
+              </div>
+              <div class="testimonial swiper-slide col-lg-4 col-sm-12">
+                <a href="https://booking-app-tau.vercel.app/" target="_blank">
+                  <figure>
+                    <img src="Media/hotel.png" alt="Notes App" />
+                    <figcaption>Booking App</figcaption>
+                  </figure>
+                </a>
+                <p class="desc">
+                  This is a MERN stack Application that I am currently working on. The application will ensure that users make a unique hotel reservation so as to prevent the possibility of multiple users reserving a room at the same date time and time.
+                </p>
+              </div>
+              <div class="testimonial swiper-slide col-lg-4 col-sm-12">
+                <a
+                  href="https://remilekun-odegbami.github.io/Restaurant-Bootstrap"
+                  target="_blank"
+                >
+                  <figure>
+                    <img src="Media/restaurant.png" alt="Restaurant" />
+                    <figcaption>Restaurant </figcaption>
+                  </figure>
+                </a>
+                <p class="desc">
+                  This is an application built using HTML and CSS. The application can serve as a template website for a company that deals with food.
+                </p>
+              </div>
+              <div class="testimonial swiper-slide col-lg-4 col-sm-12">
+                <a
+                  href="https://remilekun-baseball.herokuapp.com/"
+                  target="_blank"
+                >
+                  <figure>
+                    <img src="Media/baseball.png" alt="Baseball" />
+                    <figcaption>Baseball App</figcaption>
+                  </figure>
+                </a>
+                <p class="desc">
+                  This is an application built using Node Js, Express and Sample APIs. It lists a number of great baseball players, their ages and the number of hits they had.
+                </p>
+              </div>
+              <div class="testimonial swiper-slide col-lg-4 col-sm-12">
+                <a href="https://about-africa.vercel.app/" target="_blank">
+                  <figure>
+                    <img src="Media/abt-africa.png" alt="About Africa" />
+                    <figcaption>About Africa</figcaption>
+                  </figure>
+                </a>
+                <p class="desc">
+                  This is a game built using HTML, CSS and Vanilla JavaScript. The game is aimed at testing user’s knowledge of Africa and also teaching them about it
+                </p>
+              </div>
+              <div class="testimonial swiper-slide col-lg-4 col-sm-12">
+                <a href="https://weather-app678.netlify.app/" target="_blank">
+                  <figure>
+                    <img
+                      src="Media/weather-app.PNG"
+                      alt="JavaScript Weather App"
+                    />
+                    <figcaption>Weather App</figcaption>
+                  </figure>
+                </a>
+                <p class="desc">
+                  This is an application built using HTML, CSS, Vanilla JavaScript and a weather API. It is used to access weather information of different cities around the world.
+                </p>
+              </div>
+              <div class="testimonial swiper-slide col-lg-4 col-sm-12">
+                <a href="https://shopping-list-pi.vercel.app/" target="_blank">
+                  <figure>
+                    <img
+                      src="Media/shopping-list-js.PNG"
+                      alt="JavaScript Shopping List"
+                    />
+                    <figcaption>Shopping List App</figcaption>
+                  </figure>
+                </a>
+                <p class="desc">
+                  This application was built using HTML, CSS and Vanilla JavaScript to keep track of users' shopping items.
+                </p>
+              </div>
+              <div class="testimonial swiper-slide col-lg-4 col-sm-12">
+                <a
+                  href="https://todo-version-2.vercel.app/register"
+                  target="_blank"
+                >
+                  <figure>
+                    <img src="Media/React-to-do.PNG" alt="React-to-do" />
+                    <figcaption>To Do App</figcaption>
+                  </figure>
+                </a>
+                <p class="desc">This is a todo application built using React Js. It helps users track their tasks.</p>
+              </div>
+              <div class="testimonial swiper-slide col-lg-4 col-sm-12">
+                <a
+                  href="https://age-tester.vercel.app/"
+                  target="_blank"
+                >
+                  <figure>
+                    <img src="Media/age-tester.png" alt="age tester" />
+                    <figcaption>Age Tester</figcaption>
+                  </figure>
+                </a>
+                <p class="desc">This age tester application built using HTML, CSS and JavaScript will tell you if you are eligible to drink or not based on the age passed in the input field.
+              </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="row">
+            <div class="title">
+              <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">
+                 contact me
+              </h2>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col" data-aos="fade-right" data-aos-duration="1200">
+              <div class="card h-100">
+              <div class="contact-icon">
+                <i class="fa fa-map-marker"></i>
+              </div>
+              <div class="contact-info card-body">
+                <h3>Address</h3>
+                <span> Ibadan, Nigeria (open to relocation) </span>
+              </div>
+            </div>
+            </div>
+            <div class="col" data-aos="fade-right" data-aos-duration="1200">
+              <div class="card h-100">
+              <div class="contact-icon">
+                <i class="fa fa-envelope"></i>
+              </div>
+              <div class="contact-info card-body">
+                <h3>email</h3>
+                <a href="mailto:remdev22@gmail.com"> send me a mail</a>
+              </div>
+            </div>
+            </div>
+            <div class="col" data-aos="fade-right" data-aos-duration="1200">
+              <div class="card h-100">
+                <div class="contact-icon">
+                <i class="fa fa-linkedin"></i>
+              </div>
+              <div class="contact-info card-body">
+                <h3>linkedin</h3>
+                <a href="https://www.linkedin.com/in/remilekun-odegbami">
+                  connect on Linkedin
+                </a>
+              </div>
+              </div>
+            </div>
+            <div class="col" data-aos="fade-right" data-aos-duration="1200">
+              <div class="card h-100">
+                <div class="contact-icon">
+                <i class="fa fa-twitter"></i>
+              </div>
+              <div class="contact-info card-body">
+                <h3>Twitter</h3>
+                <a
+                  href="https://twitter.com/Rem_dev22?t=iGkHQywSS5v2ROOH6k3-pg&s=08"
+                >
+                  connect on Twitter
+                </a>
+              </div>
+              </div>
+            </div>
+            <div class="col" data-aos="fade-right" data-aos-duration="1200">
+              <div class="card h-100">
+                <div class="contact-icon">
+                <i class="fa fa-github"></i>
+              </div>
+              <div class="contact-info card-body">
+                <h3>Github</h3>
+                <a href="https://github.com/Remilekun-Odegbami">
+                  Visit my Github
+                </a>
+              </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <footer class="footer" id="footer">
+      <div class="container">
+        <h3 class="main-text" data-aos="fade-right" data-aos-duration="1000">
+          Thanks for stopping by. I am looking forward to connecting and working
+          with you.
+        </h3>
+        <p class="colophon-text" data-aos="fade-up" data-aos-duration="1000">
+          made with <span> <i class="fa fa-heart"></i></span> by
+          Remilekun
+        </p>
+        <p class="colophon-text">
+          copyright &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+        </p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
